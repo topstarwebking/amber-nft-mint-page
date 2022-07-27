@@ -490,7 +490,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
             <h1 className="text-[#05A3FF] text-[50px] font-bold my-10">
               {locale?.partners}
             </h1>
-            <div className="sm:block hidden">
+            <div className="sm:block hidden text-center">
               <Image
                 src={settings.partners}
                 alt="Partners"
