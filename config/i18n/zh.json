@@ -1,0 +1,139 @@
+{
+  "viewIn": "中文查看",
+  "langPicker": "中文",
+
+  "siteTitle": "Amber-NFT",
+  "title": "在 Metaverse 中获得终生的 3D NFT 化身",
+  "description": "不要跳过设计。 通过构建真正的应用程序、协作和解决产品 UI 问题来学习设计和代码。",
+  "mint3DNFT": "作为 3D NFT 化身",
+  "billedOnce": "N8,计费一次",
+  "recentlyMinted": "最近铸造的",
+  "nextNFT": "下一个",
+  "prevNFT": "上一个",
+  "whitepaper": "白皮书",
+  "tokenomics": "代币经济学",
+  "marketplace": "市场",
+  "contactus": "联系我们",
+  "profile": "轮廓",
+  "mintDescription": "我们专注于行业领先的平台,以便您为下一份工作做好准备。 然后我们尽我们所能教他们。",
+
+  "mint": "薄荷",
+  "play": "播放",
+  "notLoggedIn": "你没有登录",
+  "continueAsGuest": "以访客身份继续",
+  "download": "在 AppStore 上下载",
+  "mintAvatar": "Mint NFT 头像",
+  "item": "项目",
+  "total": "总计",
+  "near": "Near",
+  "congratulation": "恭喜！",
+  "youritem": "你的物品",
+  "successMinted": "铸造成功",
+  "share": "分享",
+  "sorry": "对不起,出了点问题。",
+  "sorryDesc": "我们正在努力,我们会尽快修复它",
+  "goBack": "返回",
+  "playAmberGame": "玩 AMBER NFT 游戏",
+  "getFullownership": "获得角色的完全所有权",
+  "receivingRareNFT": "接收稀有 NFT 将产生大量代币:",
+  "year": "年",
+  "months": "月",
+  "month": "月",
+  "obtainStatus": "获得琥珀身份的第一公民",
+  "becomeMember": "成为 NFT DAO 的成员",
+  "recentlyMintedDesc": "我们专注于行业领先的平台,以便您为下一份工作做好准备。然后我们会尽我们所能教授它们",
+  "rarity": "稀有",
+  "getNFTUnique": "获得具有独特外观和稀有度的 NFT 头像",
+  "getNFTDesc": "有一定概率你可以通过质押和流式代币获得稀有的 NFT,这将为你带来高达 300N 代币的 NFT 收入！",
+  "participateGame": "使用您的 NFT 头像进入游戏,参与战斗并获胜。",
+  "gameDesc": "游戏中有死亡竞赛、团队竞赛、夺旗等战斗模式。即将推出-大逃杀",
+  "trade": "贸易",
+  "tradeDesc": "交易或出售您在玩 AMBER Metaverse 时购买或收到的 NFT。",
+  "tradeSmallDesc": "ABMER 正在使用改进的 ERC-721 NFT 标准来扩展您的 NFT 功能,这些 NFT 可以在市场上出售",
+  "rule1": "成为 AMBER 游戏玩家。",
+  "rule2": "第一个 AMBER 公民身份。",
+  "rule3": "接收稀有的 NFT 会生成一个代币流:",
+  "rule4": "获得角色的所有权。",
+  "rule5": "NFT DAO 成员",
+  "rule6": "X2 银牌。",
+  "rule7": "私人游戏俱乐部。",
+  "rule8": "质押。",
+  "instruct1": "可以玩 AMBER 游戏。",
+  "instruct2": "拥有你的角色的所有权。能够收集、出售和捐赠。玩 AMBER 游戏。",
+  "instruct3": "成为 AMBER 第一定居者并成为 AMBER NFT DAO (1NFT = 1 票)。",
+  "instruct4": "通过获得稀有 NFT,您将通过 Roketo 服务 (roke.to) 获得 NEAR 流形式的奖品:300N - 1 件（有效期 1 年）,30N - 8 件（有效期 6 个月） ), 5N - 80枚（有效期1个月）到NFT所有者的钱包（售后分配）。",
+  "instruct5": "每个 NFT 将在游戏中为您带来 2x 银币（很快）。",
+  "instruct6": "您可以使用 AR 技术随时随地展示您的财产。",
+  "instruct7": "通过我们的 NFT,您可以在现实世界中玩耍,在 TikTok 中赢得舞蹈挑战赛。",
+  "instruct8": "进入 Discord 上的私人游戏俱乐部。",
+  "instruct9": "牛排。",
+  "instruct10": "参加私人回合。",
+  "instruct11": "在 AMBER 以外的游戏中使用。",
+  "partners": "合作伙伴",
+  "joinUs": "加入我们",
+  "copywrite": "©2021 NFT Innovation。保留所有权利。",
+  "about": "关于",
+  "vote": "投票",
+  "search": "搜索",
+
+  "calendarEvent": "立即铸造!",
+  "connectWallet": "使用 NEAR 登录",
+  "signOut": "登出",
+  "new": "新的!",
+  "myNFTs": "我的NFT",
+  "close": "关闭",
+  "zoomIn": "放大",
+  "zoomOut": "缩小",
+  "hero": {
+    "video": "3d_toys_playground.mp4",
+    "title": "标语在这里",
+    "body": "一行描述在这里",
+    "ps": "首发日期 SALE_START!",
+    "remaining": "剩余NFT:REMAINING_COUNT",
+    "cta": "添加到日历",
+    "action": "ADD_TO_CALENDAR(SALE_START)",
+    "saleClosed": {
+      "signedIn": {
+        "ps": "* 首发单价: SALE_START\n\n* 预售单价: PRESALE_START\n\n加入预售! [加入社区 Discord](https://discord.com/invite/UY9Xf2k) 参与白名单活动"
+      },
+      "vip": {
+        "title": "欢迎, CURRENT_USER!",
+        "ps": "预售单价: PRESALE_START",
+        "action": "ADD_TO_CALENDAR(PRESALE_START)"
+      }
+    },
+    "presale": {
+      "vip": {
+        "title": "早期创作已经开始",
+        "ps": "公开销售时间为 SALE_START.\n\n 剩余购买额度: MINT_LIMIT",
+        "setNumber": "购买数量",
+        "cta": "支付金额: MINT_PRICE",
+        "action": "MINT"
+      }
+    },
+    "saleOpen": {
+      "title": "铸币开始了！",
+      "ps": "",
+      "setNumber": "购买数量",
+      "cta": "支付金额: MINT_PRICE",
+      "action": "MINT",
+      "signedOut": {
+        "action": "SIGN_IN"
+      }
+    },
+    "allSold": {
+      "title": "All INITIAL_COUNT 售罄!",
+      "body": "The NFTs 已经全部售罄",
+      "ps": "",
+      "cta": "在市场上购买",
+      "action": "GO_TO_PARAS"
+    }
+  },
+  "extraSections": [
+    {
+      "className": "this-class-is-set-in-i18n-files",
+      "text": "# Introducing Cool NFT Project\n\nThis is a longer description of the project. About a paragraph long. Some [filler text](https://placehodler.shapelabs.co/) to demonstrate: Token standard surrendered some burned mnemonic phrase until some wallet because blockchain detected many pre-mine. It based on many automated token generation event, and when Tether formed some trustless in the FUD, Dogecoin slept on lots of anti-money laundering of many stale block!\n\nSolidity limited lots of reinvested distributed denial of service attack! ICO specialises in lots of lightning fast private chain since Zilliqa surrendered few reinvested cryptocurrency, however, because someone limited few provably fiat until the vanity address, Augur stuck many burned pre-mine. They sharded many technical analysis, or NFT specialises in the FOMO in few wash trade.",
+      "image": "example.png"
+    }
+  ]
+}

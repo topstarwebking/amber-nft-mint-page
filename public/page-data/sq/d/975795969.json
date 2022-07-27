@@ -1,0 +1,1 @@
+{"errors":[{"message":"spawn D:\\Apps\\github-activity-generator-master\\Amber-mint-page\\.bin\\gatsby-transformer-video\\win32-x64\\ffprobe.exe ENOENT","locations":[{"line":5,"column":7}],"path":["allFile","videos",1,"videoH264"]}],"data":{"allFile":{"videos":[{"relativePath":".gitkeep","videoH264":null},{"relativePath":"3d_toys_playground.mp4","videoH264":null}]}}}

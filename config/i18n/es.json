@@ -1,0 +1,139 @@
+{
+  "viewIn": "Ver en Español",
+  "langPicker": "Español",
+
+  "siteTitle": "Amber-NFT",
+  "title": "Consigue tu avatar 3D NFT de por vida en el Metaverso",
+  "description": "No te saltes el diseño. Aprenda a diseñar y codificar creando aplicaciones reales, colaborando y resolviendo problemas de interfaz de usuario de productos.",
+  "mint3DNFT": "COMO UN AVATAR 3D NFT",
+  "billedOnce": "N8, facturado una vez",
+  "recentlyMinted": "Recientemente acuñado",
+  "nextNFT": "Siguiente",
+  "prevNFT": "Anterior",
+  "whitepaper": "Papel blanco",
+  "tokenomics": "tokenómica",
+  "marketplace": "Mercado",
+  "contactus": "Contacta con nosotros",
+  "profile": "Perfil",
+  "mintDescription": "Nos enfocamos en plataformas líderes en la industria para que pueda estar preparado para su próximo trabajo. Luego enseñamos todo lo que podemos sobre ellos.",
+
+  "mint": "menta",
+  "play": "juego",
+  "notLoggedIn": "No has iniciado sesión",
+  "continueAsGuest": "Continuar como invitado",
+  "download": "Descargar en AppStore",
+  "mintAvatar": "Avatar NFT de menta",
+  "item": "Elemento",
+  "total": "Total",
+  "near": "Near",
+  "congratulation": "Felicitaciones!",
+  "youritem": "Tu artículo ",
+  "successMinted": "se acuñó con éxito",
+  "share": "Comparte",
+  "sorry": "Lo siento, algo salió mal.",
+  "sorryDesc": "Estamos trabajando en ello y lo arreglaremos tan pronto como podamos",
+  "goBack": "Regresar",
+  "playAmberGame": "Juega el juego AMBER NFT",
+  "getFullownership": "Consigue la propiedad total de tu personaje",
+  "receivingRareNFT": "Recibir NFT raros generará un flujo de tokens:",
+  "year": "año",
+  "months": "meses",
+  "month": "mes",
+  "obtainStatus": "Obtener primer ciudadano de estatus AMBER",
+  "becomeMember": "Convertirse en miembro de NFT DAO",
+  "recentlyMintedDesc": "Nos enfocamos en plataformas líderes en la industria para que pueda estar preparado para su próximo trabajo. Luego le enseñamos todo lo que podemos sobre ellas",
+  "rarity": "rareza",
+  "getNFTUnique": "Consigue tu avatar de NFT con una apariencia y rareza únicas",
+  "getNFTDesc": "Con cierta probabilidad, puede obtener NFT raros con tokens de replanteo y transmisión, ¡lo que le brindará un ingreso de hasta 300N tokens de NFT!",
+  "participateGame": "Entra al juego con tu avatar NFT y participa en batallas y gana.",
+  "gameDesc": "En el juego están disponibles modos de combate como Deathmatch, Team Deatchmatch, Capture Flag. Próximamente: Battle Royale",
+  "trade": "Comercio",
+  "tradeDesc": "Intercambia o vende NFT que compraste o recibiste mientras jugabas en AMBER Metaverse",
+  "tradeSmallDesc": "ABMER está utilizando el estándar ERC-721 NFT mejorado para expandir sus características NFT y estos NFT se pueden vender en Marketplaces",
+  "rule1": "Conviértete en un jugador del Juego AMBER.",
+  "rule2": "Primer ciudadano de estatus AMBER.",
+  "rule3": "Recibir NFT raros generará un flujo de tokens:",
+  "rule4": "Consigue la propiedad de tu personaje.",
+  "rule5": "Miembro de la NFT DAO",
+  "rule6": "X2 en plata del juego.",
+  "rule7": "Club de juego privado.",
+  "rule8": "Apostar.",
+  "instruct1": "Puedo jugar el juego AMBER.",
+  "instruct2": "Tener la propiedad de tu personaje. Ser capaz de coleccionar, vender y donar. Juega el juego AMBER.",
+  "instruct3": "Conviértase en un primer colono AMBER y conviértase en un DAO AMBER NFT (1NFT = 1 voto).",
+  "instruct4": "Al obtener NFT raros, recibirás un premio en forma de transmisiones NEAR a través del servicio Roketo (roke.to): 300N - 1 pieza (válida por 1 año), 30N - 8 piezas (válida por 6 meses) ), 5N - 80 piezas (válido por 1 mes) a la billetera del propietario de NFT (distribución después de la venta)",
+  "instruct5": "Cada NFT te dará el doble de plata en el juego (pronto).",
+  "instruct6": "Puedes usar la tecnología AR y exhibir tu propiedad en cualquier lugar y en cualquier momento.",
+  "instruct7": "Con nuestro NFT puedes jugar en el mundo real, ganar desafíos de baile en TikTok.",
+  "instruct8": "Obtén acceso a un club de juego privado en Discord.",
+  "instruct9": "Bistec.",
+  "instruct10": "Participa en una ronda privada.",
+  "instruct11": "Usar en juegos fuera de AMBER.",
+  "partners": "Socios",
+  "joinUs": "Únete a nosotros",
+  "copywrite": "©2021 NFT Innovation. Todos los derechos reservados.",
+  "about": "Acerca de",
+  "vote": "votar",
+  "search": "Buscar",
+
+  "calendarEvent": "¡Crear un NFT!",
+  "connectWallet": "Iniciar Sesión con NEAR",
+  "signOut": "Desconectar",
+  "new": "¡Nuevo!",
+  "myNFTs": "Mi NFTs",
+  "close": "Cerrar",
+  "zoomIn": "Dar un golpe de zoom",
+  "zoomOut": "Disminuir el zoom",
+  "hero": {
+    "video": "3d_toys_playground.mp4",
+    "title": "El Eslogan Va Aquí",
+    "body": "Una descripción de una línea va aquí.",
+    "ps": "¡Puedes crear tu primero a las SALE_START!",
+    "remaining": "NFTs que quedan: REMAINING_COUNT",
+    "cta": "Añadir a Calendario",
+    "action": "ADD_TO_CALENDAR(SALE_START)",
+    "saleClosed": {
+      "signedIn": {
+        "ps": "* Crear tu primero: SALE_START\n\n* Si estás en el listo \"VIP\": PRESALE_START\n\nQuedate un/a VIP! [Joino nuestro Discord](https://discord.com/invite/UY9Xf2k)."
+      },
+      "vip": {
+        "title": "¡Bienvenid@, CURRENT_USER!",
+        "ps": "Puedes crear un NFT a las PRESALE_START",
+        "action": "ADD_TO_CALENDAR(PRESALE_START)"
+      }
+    },
+    "presale": {
+      "vip": {
+        "title": "La creación temprano ha comenzado!",
+        "ps": "El creación publico empezar a las SALE_START.\n\nTu VIP asignación restante: MINT_LIMIT",
+        "setNumber": "Crear quantidad de",
+        "cta": "Crear para MINT_PRICE",
+        "action": "MINT"
+      }
+    },
+    "saleOpen": {
+      "title": "Minting has begun!",
+      "ps": "",
+      "setNumber": "Crear quantidad de",
+      "cta": "Crear para MINT_PRICE",
+      "action": "MINT",
+      "signedOut": {
+        "action": "SIGN_IN"
+      }
+    },
+    "allSold": {
+      "title": "¡Todos INITIAL_COUNT han estado creado!",
+      "body": "",
+      "ps": "",
+      "cta": "Compra en el Mercado",
+      "action": "GO_TO_PARAS"
+    }
+  },
+  "extraSections": [
+    {
+      "className": "this-class-is-set-in-i18n-files",
+      "text": "# Introducing Cool NFT Project\n\nThis is a longer description of the project. About a paragraph long. Some [filler text](https://placehodler.shapelabs.co/) to demonstrate: Token standard surrendered some burned mnemonic phrase until some wallet because blockchain detected many pre-mine. It based on many automated token generation event, and when Tether formed some trustless in the FUD, Dogecoin slept on lots of anti-money laundering of many stale block!\n\nSolidity limited lots of reinvested distributed denial of service attack! ICO specialises in lots of lightning fast private chain since Zilliqa surrendered few reinvested cryptocurrency, however, because someone limited few provably fiat until the vanity address, Augur stuck many burned pre-mine. They sharded many technical analysis, or NFT specialises in the FOMO in few wash trade.",
+      "image": "example.png"
+    }
+  ]
+}

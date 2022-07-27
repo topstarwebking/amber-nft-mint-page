@@ -1,0 +1,46 @@
+{
+  "author": "@TenkDAO",
+  "siteUrl": "http://amber.top",
+  "contractName": "semionadam.testnet",
+  "siteTitle": "Amber-NFT",
+  "image": "tenk-logo.png",
+  "favicon": "favicon.svg",
+  "social": [
+    {
+      "href": "https://discord.com/invite/UY9Xf2k",
+      "img": "discord.svg",
+      "alt": "Discord"
+    },
+    {
+      "href": "https://twitter.com/TenkDAO",
+      "img": "twitter.svg",
+      "alt": "Twitter"
+    }
+  ],
+  "logo": "logo.svg",
+  "bookIcon": "book-icon.svg",
+  "cardIcon": "card-icon.svg",
+  "downIcon": "down-icon.svg",
+  "ideaIcon": "idea-icon.svg",
+  "userIcon": "user-icon.svg",
+  "manNft": "nft-man.png",
+  "bgBlueCurve": "bg-blue-curve.svg",
+  "bgGradientCurve": "bg-gradient-curve.svg",
+  "cycle": "cycle.svg",
+  "femaleNft": "nft-female.png",
+  "icon1": "icon1.png",
+  "icon2": "icon2.png",
+  "icon3": "icon3.png",
+  "icon4": "icon4.png",
+  "icon5": "icon5.png",
+  "appleiPhoneNFT": "apple-iphone-NFT.png",
+  "phoneGame1": "Phone game 1.png",
+  "phoneGame2": "Phone game 1.png",
+  "fightModels": "fight NFT.png",
+  "partnerBGCurve": "partner-bg-red.svg",
+  "partners": "logos partners 2.png",
+  "logoBlue": "logo-blue.svg",
+  "femaleNFTFight": "female fight NFT.png",
+  "partnersMobile": "partners-mobile.png",
+  "mintItem": "mint-item.png"
+}
