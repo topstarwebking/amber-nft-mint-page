@@ -497,7 +497,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                 className="text-center"
               />
             </div>
-            <div className="sm:hidden block">
+            <div className="sm:hidden block text-center">
               <Image
                 src={settings.partnersMobile}
                 alt="Partners"
