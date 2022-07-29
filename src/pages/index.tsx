@@ -26,9 +26,11 @@ const IndexPage = () => {
   return (
     <Layout>
       {locales.map(locale => (
-        <p key={locale.id}>
-          <Link to={`/${locale.id}/`}>{locale.viewIn}</Link>
-        </p>
+        <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-[10%] m-auto my-2 text-center">
+          <p key={locale.id}>
+            <Link to={`/${locale.id}/`}>{locale.viewIn}</Link>
+          </p>
+        </div>
       ))}
     </Layout>
   )

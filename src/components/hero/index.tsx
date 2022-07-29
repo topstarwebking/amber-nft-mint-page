@@ -138,13 +138,13 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
         >
           <div className="backdrop-blur-[90px] pb-20">
             <div
-              className="px-[1rem] sm:px-[8rem] flex flex-col lg:flex-row justify-center items-center mx-auto pt-[6.6rem] min-h-[100vh] text-center sm:text-start"
+              className="px-[1rem] sm:px-[8rem] flex flex-col lg:flex-row justify-start items-center mx-auto pt-[6.6rem] sm:min-h-[100vh] text-center sm:text-start"
               style={{
                 backgroundColor: "rgba(217, 217, 217, 0.01)",
               }}
             >
               {/* {fill(hero.remaining, data)} */}
-              <h1 className="lg:text-[54px] sm:text-[40px] text-[30px] leading-tight font-semibold text-white scale-y-105 lg:hidden text-center mt-[84px]">
+              <h1 className="lg:text-[54px] sm:text-[40px] text-[30px] leading-tight font-semibold text-white scale-y-105 lg:hidden text-center mt-20">
                 {locale?.title}
               </h1>
               <div className="space-y-8 lg:w-[60%] xl:w-[76%] mt-20 lg:block hidden">
@@ -159,15 +159,15 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                   <PlayButton onClick={onPlayGame} />
                 </div>
               </div>
-              <div className="relative">
+              <div className="relative text-center">
                 <CharacterModel />
                 <Image
                   src={settings.cycle}
                   alt="Cycle-Image"
-                  className="h-[22px] w-[35.8px] absolute bottom-6 sm:bottom-4 left-20 sm:right-24"
+                  className="h-[22px] w-[35.8px] hidden sm:block m-auto"
                 />
               </div>
-              <div className="flex lg:hidden ">
+              <div className="flex lg:hidden mt-14">
                 <MintButton onClick={onMintDlg} />
                 <PlayButton onClick={onPlayGame} />
               </div>
