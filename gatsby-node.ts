@@ -7,7 +7,7 @@ import { rpcData } from "./src/hooks/useTenk"
 export const onPreInit: GatsbyNode["onPreInit"] = async () => {
   const data = await rpcData()
   fs.writeFileSync(
-    path.resolve('stale-data-from-build-time.json'),
+    path.resolve("stale-data-from-build-time.json"),
     JSON.stringify(data)
   )
 }
@@ -15,7 +15,7 @@ export const onPreInit: GatsbyNode["onPreInit"] = async () => {
 export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
   locales.forEach(locale => {
     actions.createPage({
-      path: locale.id,
+      path: "/",
       component: path.resolve("src/templates/[locale].tsx"),
       context: { locale },
     })

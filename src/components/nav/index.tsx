@@ -52,56 +52,63 @@ export default function Navbar() {
             </svg>
           </label>
 
-          <ul
+          <GradientMenu
             tabIndex={0}
-            className="menu dropdown-content absolute right-5 mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu dropdown-content absolute right-5 mt-3 p-2 shadow bg-base-100 rounded-bl-2xl w-32"
           >
             <li>
               <a
                 href="#"
-                className="text-black text-xs gap-[0.4rem] text-right"
+                className="text-black text-xs gap-[0.4rem] justify-end"
               >
                 <span>{locale.mint}</span>
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-xs gap-[0.4rem]">
+              <a
+                href="#"
+                className="text-black text-xs gap-[0.4rem]  justify-end"
+              >
                 <span>{locale.play}</span>
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-xs gap-[0.4rem]">
-                <span>{locale.whitepaper}</span>
+              <a
+                href="#"
+                className="text-black text-xs gap-[0.4rem]  justify-end"
+              >
+                <span>{locale.rarity}</span>
               </a>
             </li>
             <li>
-              <a href="#" className="text-black text-xs gap-[0.4rem]">
-                <span>{locale.tokenomics}</span>
+              <a
+                href="https://linktr.ee/ambermetaverse"
+                target="_blank"
+                className="text-black text-xs gap-[0.4rem]  justify-end"
+              >
+                <span>{locale.about}</span>
               </a>
             </li>
             <li>
-              {!currentUser ? (
-                <LoginButton onClick={signIn}>{locale.login}</LoginButton>
-              ) : (
-                <Dropdown
-                  items={[{ children: locale.signOut, onSelect: signOut }]}
-                  trigger={currentUser}
-                />
+              {!currentUser && (
+                <LoginButton onClick={signIn}>
+                  <h1 className="text-center w-full">{locale.login}</h1>
+                </LoginButton>
               )}
             </li>
-          </ul>
+          </GradientMenu>
         </div>
       </div>
       <div className="hidden lg:block top-7 flex-none">
         <Ul className="flex p-0">
           <Li>
             <a href="#">
-              <span>{locale.whitepaper}</span>
+              <span>{locale.rarity}</span>
             </a>
           </Li>
           <Li>
-            <a href="#">
-              <span>{locale.tokenomics}</span>
+            <a href="https://linktr.ee/ambermetaverse" target="_blank">
+              <span>{locale.about}</span>
             </a>
           </Li>
           <Li>
@@ -129,5 +136,14 @@ const Nav = styled.nav`
       rgba(0, 0, 0, 0.4) 0%,
       rgba(217, 217, 217, 0) 60%
     );
+  }
+`
+
+const GradientMenu = styled.ul`
+  background: linear-gradient(to bottom, #ffbcdd, #ffd4cb);
+  color: white;
+  a {
+    color: white !important;
+    font-size: 20px;
   }
 `

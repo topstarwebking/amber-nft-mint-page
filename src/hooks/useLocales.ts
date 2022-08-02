@@ -100,6 +100,7 @@ export default function useLocales(): { locales: Locale[]; locale?: Locale } {
               rule6
               rule7
               rule8
+              rule9
               instruct1
               instruct2
               instruct3

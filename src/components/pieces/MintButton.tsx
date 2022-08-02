@@ -22,16 +22,16 @@ const MintButton: React.FC<Props> = ({ ...props }) => {
         </div>
       </IconBox>
       <TextBox>
-        <h4 className="text-sm font-semibold text-black sm:block hidden">
-          {locale?.mint3DNFT}
+        <h4 className="text-sm font-semibold text-black sm:block hidden uppercase">
+          {locale?.mintAvatar}
         </h4>
         <h4 className="text-sm font-semibold text-black block sm:hidden uppercase">
           {locale?.mintAvatar}
         </h4>
-
+        {/*
         <p className="text-sm text-gray-600 hidden sm:block">
           {locale?.billedOnce}
-        </p>
+        </p> */}
       </TextBox>
     </ButtonContainer>
   )

@@ -7,6 +7,7 @@ import "../index.css"
 const IndexPage = () => {
   const { locales } = useLocales()
   React.useEffect(() => {
+    navigate("/")
     if (locales.length === 1) {
       navigate(`/${locales[0].id}/`)
     }
@@ -25,13 +26,13 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      {locales.map(locale => (
+      {/* {locales.map(locale => (
         <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-[10%] m-auto my-2 text-center">
           <p key={locale.id}>
             <Link to={`/${locale.id}/`}>{locale.viewIn}</Link>
           </p>
         </div>
-      ))}
+      ))} */}
     </Layout>
   )
 }

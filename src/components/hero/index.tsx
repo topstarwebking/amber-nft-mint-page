@@ -134,6 +134,8 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
             backgroundImage: `url(${bgBlueCurve})`,
             // backgroundSize: "120vw 120vh",
             backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "-3.5rem -14rem",
           }}
         >
           <div className="backdrop-blur-[90px] pb-20">
@@ -155,17 +157,27 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                   {locale?.description}
                 </p>
                 <div className="flex">
-                  <MintButton onClick={onMintDlg} />
-                  <PlayButton onClick={onPlayGame} />
+                  <div>
+                    <MintButton onClick={onMintDlg} />
+                    <div className="text-center text-white mt-4 text-lg">
+                      <h3 className="font-normal font-lg">1 NFT - 8 NEAR</h3>
+                      <h3 className="font-normal font-lg">
+                        {tenkData?.tokensLeft} LEFT
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="ml-6">
+                    <PlayButton onClick={onPlayGame} />
+                  </div>
                 </div>
               </div>
               <div className="relative text-center">
                 <CharacterModel />
-                <Image
+                {/* <Image
                   src={settings.cycle}
                   alt="Cycle-Image"
                   className="h-[22px] w-[35.8px] hidden sm:block m-auto"
-                />
+                /> */}
               </div>
               <div className="flex lg:hidden mt-14">
                 <MintButton onClick={onMintDlg} />
@@ -230,16 +242,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
           <div className="mx-auto w-full sm:w-[80%] bg-transparent">
             <div className="pt-12 flex justify-between text-center lg:text-start px-16">
               <div className="w-[100%] lg:w-[50%] space-y-4">
-                <h1 className="text-3xl font-bold">
-                  {locale?.recentlyMinted}
-                  <span className="text-[1rem]">
-                    &nbsp;(
-                    {tenkData?.saleInfo.token_final_supply +
-                      "/" +
-                      tenkData?.tokensLeft}
-                    )
-                  </span>
-                </h1>
+                <h1 className="text-3xl font-bold">{locale?.recentlyMinted}</h1>
                 <div className="flex items-center justify-center lg:justify-start space-x-8">
                   <button
                     className="btn btn-sm bg-white btn-outline capitalize rounded-2xl text-xs gap-1 font-bold"
@@ -289,11 +292,13 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                   </button>
                 </div>
               </div>
-              <div className="w-[50%] hidden lg:block">
-                <p className="text-sm font-semibold text-[#05A3FF]">
-                  {locale?.mintDescription}
-                </p>
-              </div>
+              {curUser && (
+                <div className="w-[50%] hidden lg:block">
+                  <p className="text-sm font-semibold text-[#05A3FF]">
+                    {locale?.mintDescription}
+                  </p>
+                </div>
+              )}
             </div>
             <Slider images={tenkData?.nftsMinted} forwardedRef={sliderRef} />
           </div>
@@ -364,21 +369,35 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
             </div>
           </div>
 
-          <div className="w-[80%] mx-auto mt-5">
+          <div className="w-[80%] mx-auto mt-36">
             <div className="rounded-[30px] shadow-lg bg-white flex sm:flex-row flex-col">
-              <GradientBackground className="rounded-[30px] w-[100%] sm:w-[30%]">
+              <GradientBackground className="rounded-[30px] w-[100%] sm:w-[auto]">
                 <Image
                   src={settings.manNft}
                   alt="Man-NFT"
-                  className="max-h-[575px]"
+                  className="w-full rounded-[30px]"
                 />
-                <div className="flex justify-center">
+                {/* {curUser ? (
+                  <Image
+                    src={settings.manNftOld}
+                    alt="Man-NFT"
+                    className="w-full rounded-[30px]"
+                  />
+                ) : (
+                  <Image
+                    src={settings.manNft}
+                    alt="Man-NFT"
+                    className="w-full rounded-[30px]"
+                  />
+                )} */}
+
+                {/* <div className="flex justify-center">
                   <Image
                     src={settings.cycle}
                     alt="Cycle"
                     className="w-5 pb-5"
                   />
-                </div>
+                </div> */}
               </GradientBackground>
               <div className="px-5 py-8">
                 <h1 className="text-[40px] font-bold w-[70%] leading-tight p-2 hidden sm:block">
@@ -476,6 +495,16 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                         {locale?.rule8}
                       </span>
                     </label>
+                    <label className="flex items-center">
+                      <Checkbox
+                        checked={checked}
+                        className="flex items-center"
+                        onChange={handleCheckboxChange}
+                      />
+                      <span className="ml-3 text-white bg-gradient-to-r from-[#83D3FF] to-[#11ABFF] px-5 py-1 rounded-2xl">
+                        {locale?.rule9}
+                      </span>
+                    </label>
                   </div>
                 </div>
                 <div className="flex justify-end mt-5">
@@ -512,12 +541,12 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                 <h4 className="text-[#05A3FF] mb-5">{locale?.joinUs}</h4>
                 <div>
                   <SocialIcon
-                    url="https://twitter.com"
+                    url="https://twitter.com/AMBER_metaverse"
                     bgColor="transparent"
                     fgColor="white"
                   />
                   <SocialIcon
-                    url="https://discord.gg"
+                    url="https://discord.gg/5ze32SFmmS"
                     fgColor="transparent"
                     bgColor="transparent"
                   >
@@ -539,10 +568,16 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
               </div>
               <div className="mx-10">
                 <h4 className="text-[#05A3FF] mb-3">{locale?.about}</h4>
-                <div>
-                  <h4 className="text-white">{locale?.whitepaper}</h4>
-                  <h4 className="text-white">{locale?.tokenomics}</h4>
-                </div>
+                {curUser && (
+                  <div>
+                    <a>
+                      <h4 className="text-white">{locale?.rarity}</h4>
+                    </a>
+                    <a href="https://linktr.ee/ambermetaverse" target="_blank">
+                      <h4 className="text-white">{locale?.about}</h4>
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
             <div className="mt-20">

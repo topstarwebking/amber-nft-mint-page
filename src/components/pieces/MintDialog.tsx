@@ -79,17 +79,13 @@ const MintDialog = (props: Props) => {
           <h3 className="text-black text-xl">{locale?.item}</h3>
         </div>
         <ImagePart className="flex p-4 justify-between">
-          <Image src={settings.mintItem} alt="avatar" />
+          <Image
+            src={settings.mintItem}
+            alt="avatar"
+            className="rounded-[15px]"
+          />
           <div className="flex flex-col justify-center">
             <div className="text-white flex align-center">
-              <Button
-                variant="text"
-                className="!text-white"
-                onClick={(eve: React.MouseEvent) => controlClicked(eve, 1)}
-              >
-                +
-              </Button>
-              <h4 className="leading-[3rem] text-[1.3rem]">{mintNumber}</h4>
               <Button
                 variant="text"
                 className="!text-white"
@@ -97,15 +93,23 @@ const MintDialog = (props: Props) => {
               >
                 -
               </Button>
+              <h4 className="leading-[3rem] text-[1.3rem]">{mintNumber}</h4>
+              <Button
+                variant="text"
+                className="!text-white"
+                onClick={(eve: React.MouseEvent) => controlClicked(eve, 1)}
+              >
+                +
+              </Button>
             </div>
             <h4 className="text-center text-[#FFE2F0]">
-              {mintPrice}&nbsp;&nbsp;Near
+              {mintPrice}&nbsp;&nbsp;NEAR
             </h4>
           </div>
         </ImagePart>
         <div className="flex justify-between text-black px-8 py-5">
           <label className="text-xl">{locale?.total}</label>
-          <label>{mintPrice * mintNumber} Near</label>
+          <label>{mintPrice * mintNumber} NEAR</label>
         </div>
       </DialogBody>
       <DialogFooter className="!justify-center">

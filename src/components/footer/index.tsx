@@ -11,7 +11,7 @@ export default function Footer() {
     <footer
       className={` container mx-auto flex justify-between direc flex-row-reverse absolute bottom-1`}
     >
-      <LangPicker />
+      {/* <LangPicker /> */}
       <div>
         {/* <span>
           Powered By <a href="https://tenk.dev/">AMBER</a>

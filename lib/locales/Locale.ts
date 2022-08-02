@@ -142,6 +142,7 @@ export interface Locale {
   rule6: string
   rule7: string
   rule8: string
+  rule9: string
   instruct1: string
   instruct2: string
   instruct3: string

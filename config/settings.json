@@ -1,7 +1,7 @@
 {
   "author": "@TenkDAO",
   "siteUrl": "http://amber.top",
-  "contractName": "semionadam.testnet",
+  "contractName": "amber_v0.tenk.testnet",
   "siteTitle": "Amber-NFT",
   "image": "tenk-logo.png",
   "favicon": "favicon.svg",
@@ -24,6 +24,7 @@
   "ideaIcon": "idea-icon.svg",
   "userIcon": "user-icon.svg",
   "manNft": "nft-man.png",
+  "manNftOld": "nft-man_old.png",
   "bgBlueCurve": "bg-blue-curve.svg",
   "bgGradientCurve": "bg-gradient-curve.svg",
   "cycle": "cycle.svg",
