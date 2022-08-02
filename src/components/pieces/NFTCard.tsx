@@ -11,7 +11,7 @@ interface Props {
 const NFTCard = (props: Props) => {
   const { locale } = useLocales()
   return (
-    <div className="rounded-3xl bg-[#06A4FF] w-[174px] lg:w-[240px] h-[249px] lg:h-[341px] flex justify-center items-center relative">
+    <div className="rounded-3xl bg-[#06A4FF] w-[174px] lg:w-[240px] h-[174px] lg:h-[240px] flex justify-center items-center relative">
       <img
         src={props.element.media}
         alt="nft-card"
@@ -22,7 +22,7 @@ const NFTCard = (props: Props) => {
           {props.element.metadata?.title}
         </h5>
         <p className="text-[0.86em] my-2">Rarity: 335.5</p>
-        <button
+        {/* <button
           className="btn btn-outline btn-sm bg-white gap-2 font-semibold capitalize rounded-full"
           style={{
             border: "1px solid rgba(57, 19, 184, 0.2)",
@@ -43,7 +43,7 @@ const NFTCard = (props: Props) => {
             />
           </svg>
           {locale?.search}
-        </button>
+        </button> */}
       </div>
     </div>
   )
