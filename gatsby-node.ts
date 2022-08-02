@@ -15,7 +15,7 @@ export const onPreInit: GatsbyNode["onPreInit"] = async () => {
 export const createPages: GatsbyNode["createPages"] = async ({ actions }) => {
   locales.forEach(locale => {
     actions.createPage({
-      path: "/",
+      path: locale.id,
       component: path.resolve("src/templates/[locale].tsx"),
       context: { locale },
     })

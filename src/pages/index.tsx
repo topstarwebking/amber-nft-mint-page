@@ -7,7 +7,7 @@ import "../index.css"
 const IndexPage = () => {
   const { locales } = useLocales()
   React.useEffect(() => {
-    navigate("/")
+    navigate("/en")
     if (locales.length === 1) {
       navigate(`/${locales[0].id}/`)
     }
