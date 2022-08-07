@@ -20,16 +20,11 @@ import useTenk from "../../hooks/useTenk"
 import NotLoggedIn from "../pieces/NotLoggedIn"
 import MintDialog from "../pieces/MintDialog"
 import CharacterModel from "../pieces/Three"
-import bgBlueCurve from "../../../config/images/bg-blue-curve.svg"
-import bgGradientCurve from "../../../config/images/bg-gradient-curve.svg"
-import bgGradientCurve2 from "../../../config/images/bg-gradient-curve-2.svg"
-import bgBlueCurve2 from "../../../config/images/bg-blue-curve-2.svg"
 import partnerBGCurve from "../../../config/images/partner-bg-red.svg"
-import bgRedCurve from "../../../config/images/bg-red-curve.svg"
-import bgRedEnd from "../../../config/images/bg-red-end.svg"
-import bgBlueEndLeft from "../../../config/images/bg-blue-end-left.svg"
 import "react-toastify/dist/ReactToastify.css"
 import Congratulation from "../pieces/Congratulation"
+import { teamData } from "../../../lib/locales/teamData"
+import TeamCard from "../pieces/TeamCard"
 
 const curUser = wallet.getAccountId()
 
@@ -122,17 +117,16 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
         id={lastMintItem?.token_id || undefined}
       />
       <div
+        className="bg-[url('../config/images/bg-gradient-curve.svg')]"
         style={{
-          backgroundImage: `url(${bgGradientCurve})`,
           backgroundSize: "auto 40vh",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "right",
         }}
       >
         <div
+          className="bg-[url('../config/images/bg-blue-curve.svg')]"
           style={{
-            backgroundImage: `url(${bgBlueCurve})`,
-            // backgroundSize: "120vw 120vh",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "-3.5rem -14rem",
@@ -225,17 +219,17 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
           </div>
         </div>
       </div>
+
       <section
+        className="bg-[url('../config/images/21.svg'),_url('../config/images/22.svg'),_url('../config/images/23.svg'),_url('../config/images/24.svg'),_url('../config/images/25.svg'),_url('../config/images/26.svg'),_url('../config/images/27.svg'),_url('../config/images/28.svg')]"
         style={{
-          backgroundImage: `url(${bgBlueCurve2}), url(${bgGradientCurve2}), url(${bgRedCurve}), url(${bgRedEnd}), url(${bgBlueEndLeft})`,
-          backgroundSize:
-            "auto 100vh, auto 350px, auto 100vh, contain, auto 300px",
+          // backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
           backgroundOrigin:
             "border-box, border-box, border-box, border-box, border-box",
           backgroundClip: "border-box",
           backgroundPosition:
-            "right 100px, left 200px, 20vw 20%, center bottom, left bottom",
+            "left 100px, right 200px, 10% 30%, 60% 70%, left 90%, right 90%, -300px bottom, right bottom",
         }}
       >
         <div className="backdrop-blur-[80px]">
@@ -514,9 +508,24 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
               </div>
             </div>
           </div>
-
+          <div className="mt-[230px]">
+            <TeamCardContainer>
+              <h1 className="md:text-[50px] text-[30px] font-bold text-[#05A3FF] mb-[20px] col-span-3 lg:col-span-4 ml-[0] sm:ml-[-50px]">
+                Team
+              </h1>
+              {teamData.map((item, index) => (
+                <TeamCard
+                  name={item.name}
+                  id={item.id}
+                  role={item.role}
+                  image={item.image}
+                  link={item.link}
+                />
+              ))}
+            </TeamCardContainer>
+          </div>
           <PartnersGradBack className="w-[70%] mx-auto mt-32 pb-[3.5rem]">
-            <h1 className="text-[#05A3FF] text-[50px] font-bold my-10">
+            <h1 className="text-[#05A3FF] text-[30px] md:text-[50px] font-bold my-10">
               {locale?.partners}
             </h1>
             <div className="sm:block hidden text-center">
@@ -641,4 +650,24 @@ const GradientBackground = styled.div`
 const PartnersGradBack = styled.div`
   background-image: ${partnerBGCurve};
   background-size: contain;
+`
+
+const TeamCardContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 46px;
+
+  @media only screen and (max-width: 1010px) {
+    grid-template-columns: auto auto auto;
+    column-gap: 0;
+    justify-content: space-evenly;
+  }
+
+  @media only screen and (max-width: 576px) {
+    grid-template-columns: auto auto auto;
+    column-gap: 0;
+    justify-content: space-evenly;
+  }
 `
