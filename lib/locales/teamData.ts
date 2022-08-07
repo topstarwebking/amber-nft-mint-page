@@ -19,7 +19,13 @@ export const teamData = [
     image: valentin,
     link: "https://www.linkedin.com/in/infinitynft",
   },
-  { id: 2, name: "Melody", role: "Influencer", image: melody, link: "" },
+  {
+    id: 2,
+    name: "Melody",
+    role: "Influencer",
+    image: melody,
+    link: "https://twitter.com/melodytransform",
+  },
   {
     id: 3,
     name: "Andreas Kobal",
