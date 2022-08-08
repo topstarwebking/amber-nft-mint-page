@@ -223,13 +223,13 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
       <section
         className="bg-[url('../config/images/21.svg'),_url('../config/images/22.svg'),_url('../config/images/23.svg'),_url('../config/images/24.svg'),_url('../config/images/25.svg'),_url('../config/images/26.svg'),_url('../config/images/27.svg'),_url('../config/images/28.svg')]"
         style={{
-          // backgroundSize: "contain",
+          backgroundSize: "auto, auto, auto, auto,auto, auto, 70%, 82%",
           backgroundRepeat: "no-repeat",
           backgroundOrigin:
             "border-box, border-box, border-box, border-box, border-box",
           backgroundClip: "border-box",
           backgroundPosition:
-            "left 100px, right 200px, 10% 30%, 60% 70%, left 90%, right 90%, -300px bottom, right bottom",
+            "left 100px, right 200px, 10% 30%, 60% 70%, left 90%, right 90%, 100px bottom, right bottom",
         }}
       >
         <div className="backdrop-blur-[80px]">
