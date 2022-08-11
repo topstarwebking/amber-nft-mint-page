@@ -16,6 +16,7 @@ import useImageData from "../hooks/useImageData"
 import useHeroStatuses from "../hooks/useHeroStatuses"
 import favicon from "../../config/images/favicon.svg"
 import { Token } from "../near/contracts/tenk"
+import ReactGA from "react-ga"
 
 type PageContext = {
   locale: DecoratedLocale
@@ -58,6 +59,10 @@ const Landing: React.FC<PageProps<{}, PageContext>> = ({
     saleStatus,
     userStatus,
   }
+
+  useEffect(() => {
+    ReactGA.initialize("G-722KSP2KF8")
+  }, [])
 
   useEffect(() => {
     if (!transactionHashes) return

@@ -106,7 +106,12 @@ function Seo({
           content: !image ? "" : new URL(image, settings.siteUrl).href,
         },
       ].concat(meta)}
-    />
+    >
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-722KSP2KF8"
+      ></script>
+    </Helmet>
   )
 }
 export default Seo
