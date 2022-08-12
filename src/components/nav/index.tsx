@@ -131,11 +131,7 @@ const Nav = styled.nav`
   background: #ffffff5c;
   height: 1rem;
   @media (min-width: 1024px) {
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(217, 217, 217, 0) 60%
-    );
+    background: transparent;
   }
 `
 

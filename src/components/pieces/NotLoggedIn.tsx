@@ -32,7 +32,7 @@ const NotLoggedIn = (props: Props) => {
     <Dialog
       open={props.open}
       handler={handleOpen}
-      className="rounded-[30px] py-6"
+      className="rounded-[30px] py-6  sm:w-2/5 w-10/12 max-w-full"
     >
       <DialogHeader className="!justify-center">
         <h1 className="text-3xl">{locale?.notLoggedIn}</h1>
@@ -61,7 +61,7 @@ export default NotLoggedIn
 const BlueButton = styled(Button)`
   border-radius: 22px;
   margin: 5px 0;
-  letter-spacing: 
+  letter-spacing:
   text-transform: none !important;
   background-origin: border-box;
   background-image: linear-gradient(60%, #2ab4ff, #6fccff);

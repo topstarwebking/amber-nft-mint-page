@@ -66,14 +66,17 @@ const CharacterModel = () => {
       setRenderer(renderer)
 
       const scene = new THREE.Scene()
-      const scale = 1.5
+      const scale = 1.4
+
+      const viewSize = scH
+      const aspectRatio = scW / scH
       const camera = new THREE.OrthographicCamera(
-        -scale,
-        scale,
-        scale,
-        -scale,
-        0.01,
-        50000
+        (aspectRatio * 2.5) / -2,
+        (aspectRatio * 2.5) / 2,
+        2.5 / 2,
+        2.5 / -2,
+        -100,
+        100
       )
       const target = new THREE.Vector3(0, 1.2, 0)
       const initialCameraPosition = new THREE.Vector3(
@@ -128,7 +131,7 @@ const CharacterModel = () => {
   return (
     <div
       ref={refContainer}
-      className="w-[100vw] h-[100vw] sm:w-[50vw] sm:h-[50vw] relative"
+      className="w-[60vw] h-[100vw] sm:w-[50vw] sm:h-[50vw] relative"
     >
       {loading && (
         <span style={{ position: "absolute", left: "50%", top: "50%" }}>
