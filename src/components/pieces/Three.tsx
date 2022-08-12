@@ -79,10 +79,10 @@ const CharacterModel = () => {
       const scene = new THREE.Scene()
       const aspectRatio = scW / scH
       const camera = new THREE.OrthographicCamera(
-        (aspectRatio * 2.5) / -2,
-        (aspectRatio * 2.5) / 2,
-        2.5 / 2,
-        2.5 / -2,
+        (aspectRatio * 4) / -2,
+        (aspectRatio * 4) / 2,
+        4 / 2,
+        4 / -2,
         -100,
         100
       )
