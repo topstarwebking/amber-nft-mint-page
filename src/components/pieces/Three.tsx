@@ -141,6 +141,15 @@ const CharacterModel = () => {
         renderer.render(scene, camera)
       }
 
+      const handleResize = () => {
+        camera.aspect = container.clientWidth / container.clientHeight
+        camera.updateProjectionMatrix()
+        renderer.setSize(container.clientWidth, container.clientHeight)
+        renderer.render(scene, camera)
+      }
+
+      window.addEventListener("resize", handleResize)
+
       return () => {
         cancelAnimationFrame(req)
         renderer.dispose()
