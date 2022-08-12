@@ -10,6 +10,9 @@ import eldar from "../../config/images/teamPhoto/Eldar 1.png"
 import semion from "../../config/images/teamPhoto/SAMUEL 1.png"
 import vitaly from "../../config/images/teamPhoto/Vytalik 1.png"
 import derrick from "../../config/images/teamPhoto/DERRICK 1.png"
+import Vasiliy from "../../config/images/teamPhoto/Vasiliy 1.png"
+import Influencer from "../../config/images/teamPhoto/infkuencer 1.png"
+import Edgar from "../../config/images/teamPhoto/Edgar 1.png"
 
 export const teamData = [
   {
@@ -94,6 +97,27 @@ export const teamData = [
     name: "Derrick",
     role: "Designer",
     image: derrick,
+    link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
+  },
+  {
+    id: 13,
+    name: "Lonchi",
+    role: "Tiktok influenser",
+    image: Influencer,
+    link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
+  },
+  {
+    id: 14,
+    name: "Edgar Osipov",
+    role: "Community Builder",
+    image: Edgar,
+    link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
+  },
+  {
+    id: 15,
+    name: "Vasiliy Ponomariov",
+    role: "Legal advizor",
+    image: Vasiliy,
     link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
   },
 ]

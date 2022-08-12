@@ -509,10 +509,10 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
             </div>
           </div>
           <div className="mt-[230px]">
-            <TeamCardContainer>
-              <h1 className="md:text-[50px] text-[30px] font-bold text-[#05A3FF] mb-[20px] col-span-3 lg:col-span-4 ml-[0] sm:ml-[-50px]">
-                Team
-              </h1>
+            <h1 className="md:text-[50px] text-[30px] font-bold text-[#05A3FF] mb-[20px] w-[90%] md:w-[60%]  mx-auto">
+              Team
+            </h1>
+            <TeamCardFlexContainer>
               {teamData.map((item, index) => (
                 <TeamCard
                   name={item.name}
@@ -522,7 +522,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                   link={item.link}
                 />
               ))}
-            </TeamCardContainer>
+            </TeamCardFlexContainer>
           </div>
           <PartnersGradBack className="w-[70%] mx-auto mt-32 pb-[3.5rem]">
             <h1 className="text-[#05A3FF] text-[30px] md:text-[50px] font-bold my-10">
@@ -590,7 +590,10 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
               </div>
             </div>
             <div className="mt-20">
-              <h4 className="text-[#05A3FF]">{locale?.copywrite}</h4>
+              <h4 className="text-white font-light">
+                {locale?.termsAndCondition}
+              </h4>
+              <h4 className="text-white font-light">{locale?.copywrite}</h4>
             </div>
           </div>
         </div>
@@ -669,5 +672,19 @@ const TeamCardContainer = styled.div`
     grid-template-columns: auto auto auto;
     column-gap: 0;
     justify-content: space-evenly;
+  }
+`
+
+const TeamCardFlexContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  max-width: 1000px;
+
+  @media only screen and (max-width: 768px) {
+    max-width: 800px;
+    gap: 12px;
   }
 `

@@ -55,6 +55,7 @@ export default function useLocales(): { locales: Locale[]; locale?: Locale } {
               myNFTs
               nextNFT
               prevNFT
+              termsAndCondition
               close
               zoomIn
               zoomOut

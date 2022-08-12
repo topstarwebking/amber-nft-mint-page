@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react"
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 import * as THREE from "three"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader"
-
 function easeOutCirc(x: number) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
@@ -11,6 +10,15 @@ interface GLTFOptions {
   receiveShadow: boolean
   castShadow: boolean
 }
+
+interface GLTFType {
+  gltf: any
+  animationAction: any
+}
+
+// const animationActions: THREE.AnimationAction[] = [];
+// let activeAction: THREE.AnimationAction
+let mixer: THREE.AnimationMixer
 
 function loadGLTFModel(scene: any, glbPath: string, options: GLTFOptions) {
   const { receiveShadow, castShadow } = options
@@ -34,7 +42,10 @@ function loadGLTFModel(scene: any, glbPath: string, options: GLTFOptions) {
           }
         })
 
-        resolve(obj)
+        mixer = new THREE.AnimationMixer(gltf.scene)
+        const animationAction = mixer.clipAction((gltf as any).animations[0])
+        console.log(animationAction)
+        resolve({ obj, animationAction })
       },
       undefined,
       function (error: any) {
@@ -66,9 +77,6 @@ const CharacterModel = () => {
       setRenderer(renderer)
 
       const scene = new THREE.Scene()
-      const scale = 1.4
-
-      const viewSize = scH
       const aspectRatio = scW / scH
       const camera = new THREE.OrthographicCamera(
         (aspectRatio * 2.5) / -2,
@@ -84,24 +92,36 @@ const CharacterModel = () => {
         10,
         20 * Math.cos(0.2 * Math.PI)
       )
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1)
       scene.add(ambientLight)
       const controls = new OrbitControls(camera, renderer.domElement)
-      controls.autoRotate = true
+      // controls.autoRotate = true
+      controls.enableDamping = true
+
       controls.target = target
 
       loadGLTFModel(scene, "/models/Boss.glb", {
         receiveShadow: false,
         castShadow: false,
-      }).then(() => {
+      }).then((result: any) => {
+        const gltf = result.obj
+        console.log(result.animationAction)
+        const activeAnimation = result.animationAction
+        activeAnimation.reset()
+        activeAnimation.fadeIn(1)
+        activeAnimation.play()
         animate()
         setLoading(false)
       })
 
       let req: any = null
       let frame = 0
+      const clock = new THREE.Clock()
       const animate = () => {
         req = requestAnimationFrame(animate)
+        controls.update()
+        mixer.update(clock.getDelta())
+
         frame = frame <= 100 ? frame + 1 : frame
 
         if (frame <= 100) {

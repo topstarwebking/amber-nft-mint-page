@@ -91,6 +91,7 @@ export interface Locale {
   whitepaper: string
   tokenomics: string
   marketplace: string
+  termsAndCondition: string
   contactus: string
   profile: string
   myNFTs: string
