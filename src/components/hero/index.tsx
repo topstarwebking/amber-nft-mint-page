@@ -55,7 +55,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
     saleStatus,
     userStatus,
   }
-
+  //this is data
   const onPlayGame = (eve: React.MouseEvent<HTMLInputElement>) => {
     !isMobile
       ? window.location.replace("https://ambergame.top/")
