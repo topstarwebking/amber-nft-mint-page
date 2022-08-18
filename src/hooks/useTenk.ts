@@ -35,10 +35,10 @@ const rpcCalls = Promise.all([
   TENK.get_sale_info(),
   TENK.nft_metadata(),
   TENK.tokens_left(),
-  TENK.nft_tokens({}),
   !account_id ? undefined : TENK.whitelisted({ account_id }),
   !account_id ? undefined : TENK.remaining_allowance({ account_id }),
   !account_id ? undefined : TENK.nft_tokens_for_owner({ account_id }),
+  !account_id ? undefined : TENK.nft_tokens({}),
   !account_id ? undefined : TENK.mint_rate_limit({ account_id }),
 ])
 
