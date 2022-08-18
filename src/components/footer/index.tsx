@@ -9,7 +9,7 @@ export default function Footer() {
   if (!locale) return null
   return (
     <footer
-      className={` container mx-auto flex justify-between direc flex-row-reverse absolute bottom-1`}
+      className={`container mx-auto flex justify-between direc flex-row-reverse absolute bottom-1`}
     >
       {/* <LangPicker /> */}
       <div>

@@ -7,6 +7,7 @@ import styled from "styled-components"
 interface Props {
   onClick: () => void
 }
+
 const MintButton: React.FC<Props> = ({ ...props }) => {
   const { locale } = useLocales()
   return (
@@ -68,6 +69,7 @@ const IconBox = styled.div`
   background-origin: border-box;
   box-shadow: 2px 1000px 1px #fff inset;
 `
+
 const TextBox = styled.div`
   text-align: start;
 `

@@ -1,6 +1,4 @@
 import React from "react"
-import Image from "../image"
-import settings from "../../../config/settings.json"
 import { Token } from "../../hooks/useTenk"
 import useLocales from "../../hooks/useLocales"
 

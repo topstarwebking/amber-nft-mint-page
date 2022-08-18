@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import useLocales from "../hooks/useLocales"
 import Layout from "../components/layout"
 import "../index.css"

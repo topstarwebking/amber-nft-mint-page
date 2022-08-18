@@ -286,13 +286,13 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                   </button>
                 </div>
               </div>
-              {curUser && (
+              {/* {curUser && (
                 <div className="w-[50%] hidden lg:block">
                   <p className="text-sm font-semibold text-[#05A3FF]">
                     {locale?.mintDescription}
                   </p>
                 </div>
-              )}
+              )} */}
             </div>
             <Slider images={tenkData?.nftsMinted} forwardedRef={sliderRef} />
           </div>
@@ -515,6 +515,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
             <TeamCardFlexContainer>
               {teamData.map((item, index) => (
                 <TeamCard
+                  key={"teamCard" + index}
                   name={item.name}
                   id={item.id}
                   role={item.role}
