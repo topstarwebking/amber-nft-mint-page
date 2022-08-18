@@ -104,20 +104,20 @@ export const teamData = [
     name: "Lonchi",
     role: "Tiktok influenser",
     image: Influencer,
-    link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
+    link: "",
   },
   {
     id: 14,
     name: "Edgar Osipov",
     role: "Community Builder",
     image: Edgar,
-    link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
+    link: "",
   },
   {
     id: 15,
     name: "Vasiliy Ponomariov",
     role: "Legal advizor",
     image: Vasiliy,
-    link: "https://www.linkedin.com/in/valeriia-derrick-a40b23138/",
+    link: "",
   },
 ]
