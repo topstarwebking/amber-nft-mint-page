@@ -19,7 +19,7 @@ export interface TenkData {
   remainingAllowance?: number
   mintRateLimit: number
   nftsForOwner: Token[]
-  nftsMinted: Token[]
+  // nftsMinted: Token[]
   saleInfo: SaleInfo
   tokensLeft: number
   vip: boolean
@@ -38,7 +38,7 @@ const rpcCalls = Promise.all([
   !account_id ? undefined : TENK.whitelisted({ account_id }),
   !account_id ? undefined : TENK.remaining_allowance({ account_id }),
   !account_id ? undefined : TENK.nft_tokens_for_owner({ account_id }),
-  !account_id ? undefined : TENK.nft_tokens({}),
+  // !account_id ? undefined : TENK.nft_tokens({}),
   !account_id ? undefined : TENK.mint_rate_limit({ account_id }),
 ])
 
@@ -52,7 +52,7 @@ export async function rpcData(): Promise<TenkData> {
     vip,
     remainingAllowance,
     nftsForOwner,
-    nftsMinted,
+    // nftsMinted,
     mintRateLimit,
   ] = await rpcCalls
   return {
@@ -69,14 +69,14 @@ export async function rpcData(): Promise<TenkData> {
           contractMetadata.base_uri ?? ""
         ).href,
       })) ?? [],
-    nftsMinted:
-      nftsMinted?.map(nft => ({
-        ...nft,
-        media: new URL(
-          nft.metadata?.media ?? "",
-          contractMetadata.base_uri ?? ""
-        ).href,
-      })) ?? [],
+    // nftsMinted:
+    //   nftsMinted?.map(nft => ({
+    //     ...nft,
+    //     media: new URL(
+    //       nft.metadata?.media ?? "",
+    //       contractMetadata.base_uri ?? ""
+    //     ).href,
+    //   })) ?? [],
     mintRateLimit: mintRateLimit ?? 10,
   }
 }

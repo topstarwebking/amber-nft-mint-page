@@ -294,7 +294,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                 </div>
               )} */}
             </div>
-            <Slider images={tenkData?.nftsMinted} forwardedRef={sliderRef} />
+            {/* <Slider images={tenkData?.nftsMinted} forwardedRef={sliderRef} /> */}
           </div>
 
           <div className="flex w-[90%] sm:w-[80%] mx-auto justify-around items-start mt-40">
