@@ -143,7 +143,7 @@ const actions = {
     TENK.nft_mint_many(
       { num: d.numberToMint ?? 1 },
       {
-        gas: Gas.parse("80 Tgas").mul(Gas.from("" + d.numberToMint)),
+        gas: Gas.parse("300 Tgas").mul(Gas.from("" + d.numberToMint)),
         attachedDeposit: NEAR.from(d.saleInfo.price).mul(
           NEAR.from("" + d.numberToMint)
         ),
