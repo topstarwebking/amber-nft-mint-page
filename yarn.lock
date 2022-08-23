@@ -1223,13 +1223,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.17.9", "@babel/runtime@^7.18.6":
-  version "7.18.6"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.6.tgz#6a1ef59f838debd670421f8c7f2cbb8da9751580"
-  integrity sha512-t9wi7/AW6XtKahAe20Yw0/mMljKq0B1r2fPdvaAdV/KPDZewFXdaaa6K7lxmZBZ8FBNpCiAT6iHPmd6QO9bKfQ==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/template@^7.16.7":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.7.tgz#8d126c8701fde4d66b264b3eba3d96f07666d155"
@@ -3652,15 +3645,6 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tanem/svg-injector@^10.1.21":
-  version "10.1.27"
-  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.27.tgz#932373ab5a134dfd72b892597b2801b0b8766e68"
-  integrity sha512-nUkLslqRzlJmTn2EgZ+5KgNRTLuRm1zE/87WbJ9og0mZ9YLtyL1mkfBCD6AKBTuG1soSLR6ahW58fEfbZzAGzg==
-  dependencies:
-    "@babel/runtime" "^7.18.6"
-    content-type "^1.0.4"
-    tslib "^2.4.0"
-
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
@@ -3900,7 +3884,7 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/prop-types@*", "@types/prop-types@^15.0.0", "@types/prop-types@^15.7.5":
+"@types/prop-types@*", "@types/prop-types@^15.0.0":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
@@ -4234,11 +4218,6 @@ abortcontroller-polyfill@^1.1.9:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.3.tgz#1b5b487bd6436b5b764fd52a612509702c3144b5"
   integrity sha512-zetDJxd89y3X99Kvo4qFx8GKlt6GsvN3UcRZHwU6iFA/0KiOmhkTVhe8oRoTBiTVPZu09x3vCra47+w8Yz1+2Q==
-
-abs-svg-path@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/abs-svg-path/-/abs-svg-path-0.1.1.tgz#df601c8e8d2ba10d4a76d625e236a9a39c2723bf"
-  integrity sha512-d8XPSGjfyzlXC3Xx891DJRyZfqk5JU0BJrDQcsWomFIV1/BIzPW5HDH5iDdWpqWaav0YVIEzT1RHTwWr0FFshA==
 
 accepts@^1.3.7, accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.8:
   version "1.3.8"
@@ -10974,11 +10953,6 @@ is-string@^1.0.5, is-string@^1.0.7:
   dependencies:
     has-tostringtag "^1.0.0"
 
-is-svg-path@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/is-svg-path/-/is-svg-path-1.0.2.tgz#77ab590c12b3d20348e5c7a13d0040c87784dda0"
-  integrity sha512-Lj4vePmqpPR1ZnRctHv8ltSh1OrSxHkhUkd7wi+VQdcdP15/KvQFyk7LhNuM7ZW0EVbJz8kZLVmL9quLrfq4Kg==
-
 is-symbol@^1.0.2, is-symbol@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.4.tgz#a6dac93b635b063ca6872236de88910a57af139c"
@@ -13606,11 +13580,6 @@ parse-path@^4.0.0:
     qs "^6.9.4"
     query-string "^6.13.8"
 
-parse-svg-path@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/parse-svg-path/-/parse-svg-path-0.1.2.tgz#7a7ec0d1eb06fa5325c7d3e009b859a09b5d49eb"
-  integrity sha512-JyPSBnkTJ0AI8GGJLfMXvKq42cj5c006fnLz6fXy6zfoVjJizi8BNTpu8on8ziI1cKy9d9DGNuY17Ce7wuejpQ==
-
 parse-url@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/parse-url/-/parse-url-6.0.0.tgz#f5dd262a7de9ec00914939220410b66cff09107d"
@@ -14683,16 +14652,6 @@ react-svg-loader@^3.0.3:
     loader-utils "^1.2.3"
     react-svg-core "^3.0.3"
 
-react-svg@^14.0.6:
-  version "14.1.19"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-14.1.19.tgz#c660d86bf1ee78afb07153717c624b987d6cf140"
-  integrity sha512-s2wBLSo2D3Wi0VNnZ4vzO54a6I3ZPN3qAMypkEWjg/OaTpLSFGVakG2CDE2cR/6cfWjIptDi/DAbT7TpL0OCow==
-  dependencies:
-    "@babel/runtime" "^7.17.9"
-    "@tanem/svg-injector" "^10.1.21"
-    "@types/prop-types" "^15.7.5"
-    prop-types "^15.8.1"
-
 react-toastify@^9.0.6:
   version "9.0.6"
   resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-9.0.6.tgz#740a37e15b00de34ad3c0d785b035c14565116ab"
@@ -15686,16 +15645,6 @@ snapdragon@^0.8.1:
     source-map "^0.5.6"
     source-map-resolve "^0.5.0"
     use "^3.1.0"
-
-social-media-icons-react@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/social-media-icons-react/-/social-media-icons-react-1.1.10.tgz#216cac72571bfe5ae2ca0e22347883d2c4610781"
-  integrity sha512-KaUyIIDZCKDL+gSIgc19wnPgsw6a49nbswKmUzvazPT9eA7JHWi1i8ddd7w+diFs87wMzr4yMahN3lZow9y/ng==
-  dependencies:
-    abs-svg-path "^0.1.1"
-    is-svg-path "^1.0.2"
-    parse-svg-path "^0.1.2"
-    react-svg "^14.0.6"
 
 socket.io-adapter@~2.1.0:
   version "2.1.0"
