@@ -160,7 +160,7 @@ const CharacterModel = () => {
   return (
     <div
       ref={refContainer}
-      className="w-[60vw] h-[100vw] sm:w-[50vw] sm:h-[50vw] relative"
+      className="w-[70vw] h-[90vw] sm:w-[50vw] sm:h-[50vw] relative"
     >
       {loading && (
         <span style={{ position: "absolute", left: "50%", top: "50%" }}>
