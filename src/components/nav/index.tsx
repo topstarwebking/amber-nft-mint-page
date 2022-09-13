@@ -82,6 +82,22 @@ export default function Navbar() {
             </li>
             <li>
               <a
+                href="https://drive.google.com/file/d/1jhZTYWJxynki_a2mjEQqch7O1uDvdFlX"
+                className="text-black text-xs gap-[0.4rem] justify-end"
+              >
+                <span>Pitch Deck</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://amber-metaverse.gitbook.io/whitepaper/"
+                className="text-black text-xs gap-[0.4rem]  justify-end"
+              >
+                <span>{locale.whitepaper}</span>
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://linktr.ee/ambermetaverse"
                 target="_blank"
                 className="text-black text-xs gap-[0.4rem]  justify-end"
@@ -101,6 +117,19 @@ export default function Navbar() {
       </div>
       <div className="hidden lg:block top-7 flex-none">
         <Ul className="flex p-0">
+          <Li>
+            <a
+              href="https://drive.google.com/file/d/1jhZTYWJxynki_a2mjEQqch7O1uDvdFlX"
+              target={"_blank"}
+            >
+              <span>Pitch Deck</span>
+            </a>
+          </Li>
+          <Li>
+            <a href="https://amber-metaverse.gitbook.io/whitepaper/">
+              <span>{locale.whitepaper}</span>
+            </a>
+          </Li>
           <Li>
             <a href="#">
               <span>{locale.rarity}</span>

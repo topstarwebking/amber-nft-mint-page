@@ -66,7 +66,7 @@ export const teamData = [
   },
   {
     id: 8,
-    name: "Anna Voevodina",
+    name: "Ganna Voievodina",
     role: "Legal Advisor",
     image: anna,
     link: "https://manimama.eu",
@@ -115,8 +115,8 @@ export const teamData = [
   },
   {
     id: 15,
-    name: "Vasiliy Ponomariov",
-    role: "Legal advizor",
+    name: "Vasyl Ponomarov",
+    role: "Legal advisor",
     image: Vasiliy,
     link: "",
   },

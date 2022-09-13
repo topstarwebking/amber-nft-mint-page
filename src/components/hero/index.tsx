@@ -147,15 +147,17 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                 <h1 className="lg:text-[54px] text-[40px] leading-tight font-semibold text-white scale-y-105">
                   {locale?.title}
                 </h1>
-                <p className="text-[22px] text-white leading-tight tracking-wide">
+                <p className="text-[22px] text-[#1F2027] leading-tight tracking-wide">
                   {locale?.description}
                 </p>
                 <div className="flex">
                   <div>
                     <MintButton onClick={onMintDlg} />
                     <div className="text-center text-white mt-4 text-lg">
-                      <h3 className="font-normal font-lg">1 NFT - 8 NEAR</h3>
-                      <h3 className="font-normal font-lg">
+                      <h3 className="font-normal font-lg text-[#1F2027]">
+                        1 NFT - 8 NEAR
+                      </h3>
+                      <h3 className="font-normal font-lg text-[#1F2027]">
                         {tenkData?.tokensLeft} LEFT
                       </h3>
                     </div>
@@ -174,8 +176,20 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                 /> */}
               </div>
               <div className="flex lg:hidden mt-14">
-                <MintButton onClick={onMintDlg} />
-                <PlayButton onClick={onPlayGame} />
+                <div>
+                  <MintButton onClick={onMintDlg} />
+                  <div className="text-center text-white mt-4 text-lg">
+                    <h3 className="font-normal font-lg text-[#1F2027]">
+                      1 NFT - 8 NEAR
+                    </h3>
+                    <h3 className="font-normal font-lg text-[#1F2027]">
+                      {tenkData?.tokensLeft} LEFT
+                    </h3>
+                  </div>
+                </div>
+                <div>
+                  <PlayButton onClick={onPlayGame} />
+                </div>
               </div>
             </div>
             <div className="sm:flex flex-row flex-wrap justify-center mt-20 hidden">
@@ -233,7 +247,7 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
         }}
       >
         <div className="backdrop-blur-[80px]">
-          <div className="mx-auto w-full sm:w-[80%] bg-transparent">
+          {/* <div className="mx-auto w-full sm:w-[80%] bg-transparent">
             <div className="pt-12 flex justify-between text-center lg:text-start px-16">
               <div className="w-[100%] lg:w-[50%] space-y-4">
                 <h1 className="text-3xl font-bold">{locale?.recentlyMinted}</h1>
@@ -286,16 +300,16 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
                   </button>
                 </div>
               </div>
-              {/* {curUser && (
+              {curUser && (
                 <div className="w-[50%] hidden lg:block">
                   <p className="text-sm font-semibold text-[#05A3FF]">
                     {locale?.mintDescription}
                   </p>
                 </div>
-              )} */}
+              )}
             </div>
-            {/* <Slider images={tenkData?.nftsMinted} forwardedRef={sliderRef} /> */}
-          </div>
+            <Slider images={tenkData?.nftsMinted} forwardedRef={sliderRef} />
+          </div> */}
 
           <div className="flex w-[90%] sm:w-[80%] mx-auto justify-around items-start mt-40">
             <Image
@@ -591,10 +605,23 @@ const Hero: React.FC<{ heroTree: ExpandedHeroTree }> = ({ heroTree }) => {
               </div>
             </div>
             <div className="mt-20">
-              <h4 className="text-white font-light">
-                {locale?.termsAndCondition}
+              <h4 className="font-light text-[#1F2027]">
+                <a
+                  href=" https://amber-metaverse.gitbook.io/amber/"
+                  target={"_blank"}
+                >
+                  Terms of Use
+                </a>
               </h4>
-              <h4 className="text-white font-light">{locale?.copywrite}</h4>
+              <h4 className="font-light text-[#1F2027]">
+                <a
+                  href="https://app.gitbook.com/o/2801NxPIiw7QxiWXbctW/s/z6uV5RFiWET4RxewVydY"
+                  target={"_blank"}
+                >
+                  {locale?.termsAndCondition}
+                </a>
+              </h4>
+              <h4 className="font-light text-[#1F2027]">{locale?.copywrite}</h4>
             </div>
           </div>
         </div>
